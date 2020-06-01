@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .container{
+                height:100%;
+                width:100%;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .header{
+                width:100%;
+                height:10%;
+                top:0;
+                left:0;
+                background-color:#364d34 ;
+                position:fixed;
+
+
+
+            }
+            .logo{
+                position:absolute;
+                margin-left:50px;
+                margin-top:5px;
+
+            }
+            .navbar{
+
+                margin-left:500px;
+
+
+            }
+            .navcontent li{
+                height: 30px;
+                line-height: 30px;
+                width: 110px;
+                text-align: center;
+                display: block;
+                float:left;
+
+
+
+            }
+
+
+            .navcontent li a{
+
+                text-decoration: none;
+                color: white;
+            }
+
+            .subnav{
+
+                display: none;
+
+                padding:0;
+                opacity: 0.9;
+                font-size: 12px;
+
+            }
+            .navcontent > li:hover .subnav {   
+
+                   display: block;     
+            } 
+            .subnav li{
+                background-color: rgb(22, 77, 50);
+                width: 150px;              
+
+            }
+            .subnav li a{
+
+                background-color:rgb(22, 77, 50);
+                display: block;
+                border:1px solid rgb(22, 77, 50);
+                border-radius: 5px;
+
+            }
+            .subnav li a:hover{
+
+                background-color: white;
+                color: rgb(16, 122, 71);
+            }
+
+        .mainbody{
+                width: 100%;
+                height: 80%;
+                top: 170px;
+                left: 20px;
+                background-color: white;}
+
+        .title{
+                text-align: center;
+                color: black;
+                font-size: 20px;
+                margin-top: 50px;
+                padding-top: 10px;
+
+
+        }
+        .underline{
+                width:300px;
+                border-top: 1px solid rgb(60, 209, 97);;
+                margin-top: 5px;
+
+            }
+
+
+        .content{
+                position: absolute;
+                width: 35%;
+                font-size: 16px;
+                color: #2a2e29;
+                padding-left: 100px;
+                float:left;
+
+        }
+        .contactform{
+
+                width: 70%;
+                margin-left: 600px;
+                margin-top: 30px;
+            }
+            .table{
+                float: left;
+                width:100%;
+                margin: 8px;             
+                padding: 5px;
+
+            }
+            tr{
+                height: 42px;
+            }
+            td{
+                width: 500px;
+
+            }
+           .send{
+               width:75px;
+               height: 30px;
+               float:right;
+               background-color: #0f6737;
+               color: white;
+           }
+           input{
+                width: 100%;
+                padding: 10px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid rgb(233, 226, 226);
+                border-radius: 4px;
+                box-sizing: border-box;
+                font-family:Arial, Helvetica, sans-serif;
+            }
+            textarea{
+                width: 100%;
+                height: 90px;
+                padding: 10px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                font-family:Arial, Helvetica, sans-serif;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+
+            .link{
+                position: absolute;
+                width: 100%;
+                height: 60%;
+                background-color: honeydew;
+                padding: 0;
+                margin: 50px;}
+
+
+                .link h5{
+                padding-left: 35px;
+                text-align: left;;
+                text-decoration: underline green;
+                font-size: 18px;
+                color: black;
+            }
+            .quicklink{
+                position: absolute;
+                width: 25%;
+                padding-left: 100px;
+                padding-top: 30px;
+                margin:0;
+
+
+            }
+
+            .quicklink li{
+                list-style-type: none;
+                font-size: 15px;
+                color: #2a2e29;
+
+            }
+
+            .contactlink{
+                position: absolute;
+                width: 30%;
+                margin-left: 30%;
+                padding-left: 50px;
+                padding-top: 30px;
+                font-size: 15px;
+            }
+            .contactlink li{
+                list-style-type: none;
+                color: #2a2e29;
+                line-height: 20px;
+                }
+
+            .facebooklink{
+                position: absolute;
+                width: 40%;
+                margin-left: 70%;
+                padding-top: 30px;
+                }
+            .footer{
+                position: fixed;
+                width: 100%;
+                height: 50px;
+                background-color:#364d34 ;
+                color: white;
+                float: left;
+                text-align: center;
+                bottom:0;
+
+
+            }
+            .footer a{
+                text-decoration: none;
+            }
+
+
+
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <div class="logo">
+                    <img src="image/logo3.png" width="200px"><img>
+                </div>
+                <div class="navbar">
+                    <ul class="navcontent">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About us<img src="image/dropdown.png" width="10px" height="8px"></a>
+                            <ul class="subnav">
+                                <li><a href="#">Profile</a></li>
+                                <li><a href="#">Our Structure</a></li>
+                                <li><a href="#">Our Commitment</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Projects<img src="image/dropdown.png" width="10px" height="8px"></a>
+                            <ul class="subnav">
+                                <li><a href="#">Industrial</a></li>
+                                <li><a href="#">Commericcal</a></li>
+                                <li><a href="#">Construction & Interior</a></li>
+                                <li><a href="#">Infrastructure</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Activities</a></li>
+                        <li><a href="#">Contact us</a></li>
+
+                    </ul>
+
+                </div>
+
+
+            </div>
+            <div class="title">Contact Us<hr class="underline"></div>
+            <div class="mainbody">
+                <div class="content">
+                    <p >OFFICE</p>
+                    <p><img src="image/logo4.png" width="20px"> Room 1008, 10th Floor, Building B, 50<sup>th</sup> Street Condominium, 50<sup>th</sup> Street, Botahtaung Township, Yangon, Myanmar.</p>
+                    <p><img src="image/logo5.png" width="30px"> +(95) 9 4512 999 88, +(95) 9 535 1714 </p>
+                    <p><img src="image/logo6.png" width="20px"> info@sterling-myanmar.com </p>
+
+
+                </div>
+                <div class="contactform">
+                        <form >
+                            <table id="table">
+                                <tr>
+                                    <td><label for="name">Name</label><br></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" id="name" name="name" placeholder="Name" required ><br></td>
+                                </tr>
+
+                                <tr>
+                                    <td><label for="email">Email</label><br></td>
+                                </tr>
+                                <tr>
+                                    <td> <input type="text" id="email" name="email" placeholder="E-mail" required><br></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="phone">Phone</label></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" id="name" name="name" placeholder="Phone" required><br></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="message">Messages</label></td>
+                                </tr>
+                                <tr>
+                                    <td><textarea  type="text" id="message" name="message" placeholder="Message"required></textarea></td>
+                                </tr>
+                                <tr>
+                                    <td><button type="submit" class="send">Send</button></td>
+                                </tr>
+                            </table>
+
+
+
+
+                        </form>
+
+
+
+                </div>
+
+            </div>
+            <div class="link">
+                <div class="quicklink">
+                    <h4 style=" text-decoration: underline solid 2px green;"> QUICK LINKS</h4>
+                    <ul>
+                        <li >Home</li>
+                            <li >About Us</li>
+                            <li >Services</li>
+                            <li>Project</li>
+                            <li>Activies</li>
+                            <li>Contact Us</li>
+                    </ul>
+
+                </div>
+                <div class="contactlink">
+                <h4 style=" text-decoration: underline solid 2px green;" >CONTACT US</h4>
+                 <li><img src="image/logo4.png" width="20px"> Room 1008, 10th Floor, Building B, 50<sup>th</sup> Street Condominium, 50<sup>th</sup> Street,
+                  Botahtaung Township, Yangon, Myanmar.</li>
+                <li><img src="image/logo5.png" width="30px"> +(95) 9 4512 999 88, +(95) 9 535 1714 </li>
+                <li><img src="image/logo6.png" width="20px"> info@sterling-myanmar.com </li>
+                </div>
+                <div class="facebooklink">
+                    <h4 style=" text-decoration: underline solid 2px green;">FACEBOOK LINK</h4>
+                    <img src="image/facebook.jpg">
+                </div>
+
+            </div>
+            <div class="footer">
+                <p>Copyright @ STERLING MYANMAR. All Right Reserved. | Designed By <a href="#" >Host Myanmar</a></p>
+            </div>
+        </div>
+    </body>
+</html>
